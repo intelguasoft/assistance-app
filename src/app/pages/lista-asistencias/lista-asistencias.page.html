@@ -1,0 +1,165 @@
+<ion-header>
+    <ion-toolbar mode="ios">
+        <ion-title color="primary">
+            Asistencias
+        </ion-title>
+        <ion-icon slot="end" name=""></ion-icon>
+        <ion-buttons slot="start">
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="/"></ion-back-button>
+            </ion-buttons>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <!-- List of Sliding Items -->
+                <ion-list>
+                    <!-- Multi-line sliding item with icon options on both sides -->
+                    <ion-item-sliding id="item100">
+                        <ion-item href="#">
+                            <ion-label>
+                                <h2>Matemáticas Aplicadas I</h2>
+                                <p>Semestre: 3</p>
+                                <p>Auditoría</p>
+                            </ion-label>
+                            <ion-note slot="end">
+                                12/05/19 10:45 AM
+                            </ion-note>
+                        </ion-item>
+
+                        <ion-item-options side="start">
+                            <ion-item-option color="warning" (click)="desbloquear(id)">
+                                <ion-icon slot="icon-only" name="unlock"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+
+                        <ion-item-options side="end">
+                            <ion-item-option color="secondary" (click)="fotos(id)">
+                                <ion-icon slot="icon-only" name="images"></ion-icon>
+                            </ion-item-option>
+                            <ion-item-option color="danger" (click)="eliminar(id)">
+                                <ion-icon slot="icon-only" name="trash"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+                    </ion-item-sliding>
+
+                    <ion-item-sliding id="item100">
+                        <ion-item href="#">
+                            <ion-label>
+                                <h2>Matemática Básica</h2>
+                                <p>Semestre: 9</p>
+                                <p>Ingeniería de Sistemas</p>
+                            </ion-label>
+                            <ion-note slot="end">
+                                12/05/19 10:45 AM
+                            </ion-note>
+                        </ion-item>
+
+                        <ion-item-options side="start">
+                            <ion-item-option color="warning" (click)="desbloquear(id)">
+                                <ion-icon slot="icon-only" name="unlock"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+
+                        <ion-item-options side="end">
+                            <ion-item-option color="secondary" (click)="fotos(id)">
+                                <ion-icon slot="icon-only" name="images"></ion-icon>
+                            </ion-item-option>
+                            <ion-item-option color="danger" (click)="eliminar(id)">
+                                <ion-icon slot="icon-only" name="trash"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+                    </ion-item-sliding>
+
+                    <ion-item-sliding id="item100">
+                        <ion-item href="#">
+                            <ion-label>
+                                <h2>Ingeniería de Software</h2>
+                                <p>Semestre: 11</p>
+                                <p>Ingeniería de Sistemas</p>
+                            </ion-label>
+                            <ion-note slot="end">
+                                12/05/19 10:45 AM
+                            </ion-note>
+                        </ion-item>
+
+                        <ion-item-options side="start">
+                            <ion-item-option color="warning" (click)="desbloquear(id)">
+                                <ion-icon slot="icon-only" name="unlock"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+
+                        <ion-item-options side="end">
+                            <ion-item-option color="secondary" (click)="fotos(id)">
+                                <ion-icon slot="icon-only" name="images"></ion-icon>
+                            </ion-item-option>
+                            <ion-item-option color="danger" (click)="eliminar(id)">
+                                <ion-icon slot="icon-only" name="trash"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+                    </ion-item-sliding>
+
+                    <ion-item-sliding id="item100">
+                        <ion-item href="#">
+                            <ion-label>
+                                <h2>Desarrollo Humano y Profesional</h2>
+                                <p>Semestre: 1</p>
+                                <p>Trabajo Social</p>
+                            </ion-label>
+                            <ion-note slot="end">
+                                12/05/19 10:45 AM
+                            </ion-note>
+                        </ion-item>
+
+                        <ion-item-options side="start">
+                            <ion-item-option color="warning" (click)="desbloquear(id)">
+                                <ion-icon slot="icon-only" name="unlock"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+
+                        <ion-item-options side="end">
+                            <ion-item-option color="secondary" (click)="fotos(id)">
+                                <ion-icon slot="icon-only" name="images"></ion-icon>
+                            </ion-item-option>
+                            <ion-item-option color="danger" (click)="eliminar(id)">
+                                <ion-icon slot="icon-only" name="trash"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+                    </ion-item-sliding>
+
+                    <ion-item-sliding id="item100">
+                        <ion-item href="#">
+                            <ion-label>
+                                <h2>Contabilidad de Costos</h2>
+                                <p>Semestre: 5</p>
+                                <p>Administración de Empresas</p>
+                            </ion-label>
+                            <ion-note slot="end">
+                                12/05/19 10:45 AM
+                            </ion-note>
+                        </ion-item>
+
+                        <ion-item-options side="start">
+                            <ion-item-option color="warning" (click)="desbloquear(id)">
+                                <ion-icon slot="icon-only" name="unlock"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+
+                        <ion-item-options side="end">
+                            <ion-item-option color="secondary" (click)="fotos(id)">
+                                <ion-icon slot="icon-only" name="images"></ion-icon>
+                            </ion-item-option>
+                            <ion-item-option color="danger" (click)="eliminar(id)">
+                                <ion-icon slot="icon-only" name="trash"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+                    </ion-item-sliding>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

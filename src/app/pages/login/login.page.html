@@ -1,0 +1,69 @@
+<ion-header>
+    <ion-toolbar mode="ios">
+        <ion-title color="primary">
+            Assistence App
+        </ion-title>
+        <ion-icon slot="end" name=""></ion-icon>
+        <ion-buttons slot="start">
+            <ion-buttons slot="start"> </ion-buttons>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+        <ion-row>
+            <ion-col> </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="2"> </ion-col>
+            <ion-col>
+                <ion-img src="../../../assets/images/asistencia-universitaria-logo.png"></ion-img>
+            </ion-col>
+            <ion-col size="2"> </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="1"></ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label color="primary" position="floating">Usuario</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="1"></ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label color="primary" position="floating">Contraseña</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="1"></ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label color="primary">Recordarme</ion-label>
+                    <ion-checkbox color="primary" slot="start"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="1"></ion-col>
+            <ion-col>
+                <ion-button (click)="presentLoadingWithOptions()" color="primary" expand="full" fill="solid">
+                    Acceder
+                </ion-button>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
