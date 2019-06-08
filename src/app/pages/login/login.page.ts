@@ -1,5 +1,8 @@
 import { Component, OnInit } from "@angular/core";
-import { LoadingController, NavController } from "@ionic/angular";
+import { NavController, ModalController } from "@ionic/angular";
+import { AuthService } from "../../services/auth.service";
+import { AlertService } from "../../services/alert.service";
+import { NgForm } from "@angular/forms";
 
 @Component({
   selector: "app-login",
@@ -8,22 +11,31 @@ import { LoadingController, NavController } from "@ionic/angular";
 })
 export class LoginPage implements OnInit {
   constructor(
-    private loadingCtrl: LoadingController,
-    public navCtrl: NavController
+    private modalController: ModalController,
+    private authService: AuthService,
+    private navCtrl: NavController,
+    private alertService: AlertService
   ) {}
 
   ngOnInit() {}
 
-  async presentLoadingWithOptions() {
-    const loading = await this.loadingCtrl.create({
-      spinner: "dots",
-      duration: 1000,
-      message: "Un momento por favor...",
-      translucent: true,
-      cssClass: "custom-class custom-loading"
-    });
-    return await loading.present().then(() => {
-      this.navCtrl.navigateRoot("/lista-asistencias");
-    });
+  // Dismiss Login Modal
+  dismissLogin() {
+    this.modalController.dismiss();
+  }
+
+  login(form: NgForm) {
+    this.authService.login(form.value.email, form.value.password).subscribe(
+      data => {
+        this.alertService.presentToast("Acceso correcto");
+      },
+      error => {
+        console.log(error);
+      },
+      () => {
+        this.dismissLogin();
+        this.navCtrl.navigateRoot("/dashboard");
+      }
+    );
   }
 }

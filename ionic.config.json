@@ -1,5 +1,7 @@
 {
   "name": "asistencia",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
